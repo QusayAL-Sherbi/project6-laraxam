@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layout.master');
+});
+
+Route::get('/admin/manage-exams', function () {
+  return view('admin.pages.manage-exams');
+});
+
+Route::get('/admin/manage-questions', function () {
+  return view('admin.pages.manage-questions');
+});
+
+Route::get('/admin/manage-answers', function () {
+  return view('admin.pages.manage-answers');
 });
